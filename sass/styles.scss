@@ -21,8 +21,6 @@ body {
   }
 }
 
-
-
 @mixin dat_padding($top_pad:32px,$right_pad:32px,$bottom_pad:32px,$left_pad:32px){
   padding-top: $top_pad;
   padding-right: $right_pad;
@@ -42,10 +40,6 @@ a {
     vertical-align: middle;
     color: $java_light;
   }
-}
-
-p {
-  display: block;
 }
 
 h1 {
@@ -130,16 +124,16 @@ div {
   }
 
   &.content{
+    box-sizing: border-box;
     @include dat_padding;
-    display: block-inline;
     @media #{$large-up}{
       border-right: thin solid $java_dark; 
-      width: 69%;
+      width: 70%;
       float: left;  
     }
   }
-}
-  .left{
+
+  &.left{
     @media #{$medium-down}{
       visibility: hidden;
       display: none;
@@ -153,15 +147,17 @@ div {
       float: right;
     }
   }
-  .right{
+  &.right{
     @media #{$large-up}{
       display: inline;
       width: 50%;
       float: left;
     }
   }
+}
 
 aside {
+  box-sizing: border-box;
   @include dat_padding();
   p {
     padding-bottom: 16px;
@@ -170,11 +166,9 @@ aside {
     visibility: hidden;
     display: none;
   }
-
   @media #{$large-up}{
     width: 30%;
     float: right; 
-    height: 200px;
   }
 }
 
