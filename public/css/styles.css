@@ -37,11 +37,12 @@ table {
 body {
   background-color: #EFF9EC;
   font: 16px 'Droid Serif', serif;
-  color: #14273D; }
+  color: #14273D;
+  line-height: 32px; }
   @media only screen and (min-width:961px) {
     body {
       background-color: #389FA8;
-      margin: 0 5% 0; } }
+      margin: 5%; } }
 
 a {
   text-decoration: none;
@@ -49,10 +50,10 @@ a {
   a.read_more {
     display: block;
     background-color: #389FA8;
-    padding-top: 16px;
-    padding-right: 32px;
-    padding-bottom: 16px;
-    padding-left: 32px;
+    padding-top: 1em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    padding-left: 2em;
     text-align: center;
     vertical-align: middle;
     color: #57C1C7; }
@@ -62,41 +63,41 @@ h1 {
   letter-spacing: 3px;
   text-transform: uppercase;
   border-bottom: thin solid #389FA8;
-  padding-top: 32px;
-  padding-right: 32px;
-  padding-bottom: 32px;
-  padding-left: 32px;
+  padding-top: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  padding-left: 2em;
   text-align: center;
   color: #57C1C7; }
   @media only screen and (max-width:640px) {
     h1 {
       font-size: 10px;
       background-color: #389FA8;
-      padding-top: 8px;
-      padding-right: 32px;
-      padding-bottom: 8px;
-      padding-left: 32px; } }
+      padding-top: 0.5em;
+      padding-right: 2em;
+      padding-bottom: 0.5em;
+      padding-left: 2em; } }
   @media only screen and (min-width:641px) {
     h1 {
       font-size: 20px; } }
 
 h2 {
-  font-size: 30px; }
+  font-size: 2em; }
 
 h3, h4 {
   font-weight: bold;
-  padding-bottom: 32px;
+  padding-bottom: 2em;
   color: #389FA8; }
 
 h4 {
-  padding-bottom: 16px; }
+  padding-bottom: 0; }
 
 .nav {
-  word-spacing: 32px;
-  padding-top: 16px;
-  padding-right: 32px;
-  padding-bottom: 16px;
-  padding-left: 32px;
+  word-spacing: 2em;
+  padding-top: 1em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  padding-left: 2em;
   border-bottom: thin solid #389FA8; }
   @media only screen and (max-width:640px) {
     .nav {
@@ -106,17 +107,20 @@ h4 {
     .nav {
       text-align: center; } }
 
+article a {
+  border-bottom: thin dashed #389FA8; }
+
 footer {
   display: block-inline;
   box-sizing: border-box;
   border-top: thin solid #389FA8; }
 
 .footer_links {
-  word-spacing: 32px;
-  padding-top: 16px;
-  padding-right: 32px;
-  padding-bottom: 16px;
-  padding-left: 32px; }
+  word-spacing: 2em;
+  padding-top: 1em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+  padding-left: 2em; }
   @media only screen and (max-width:960px) {
     .footer_links {
       text-align: center; } }
@@ -135,10 +139,10 @@ div ul li {
     background-color: #EFF9EC; } }
 div.content {
   box-sizing: border-box;
-  padding-top: 32px;
-  padding-right: 32px;
-  padding-bottom: 32px;
-  padding-left: 32px; }
+  padding-top: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  padding-left: 2em; }
   @media only screen and (min-width:961px) {
     div.content {
       border-right: thin solid #389FA8;
@@ -154,10 +158,10 @@ div.content {
     text-align: right;
     width: 50%;
     box-sizing: border-box;
-    padding-top: 16px;
-    padding-right: 32px;
-    padding-bottom: 16px;
-    padding-left: 32px;
+    padding-top: 1em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    padding-left: 2em;
     float: right; } }
 @media only screen and (min-width:961px) {
   div.right {
@@ -167,12 +171,12 @@ div.content {
 
 aside {
   box-sizing: border-box;
-  padding-top: 32px;
-  padding-right: 32px;
-  padding-bottom: 32px;
-  padding-left: 32px; }
+  padding-top: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  padding-left: 2em; }
   aside p {
-    padding-bottom: 16px; }
+    padding-bottom: 1em; }
   @media only screen and (max-width:640px) {
     aside {
       visibility: hidden;

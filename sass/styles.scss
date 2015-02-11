@@ -17,15 +17,16 @@ body {
   color: $prussian_blue;
   @media #{$large-up}{
     background-color: $java_dark;
-    margin: 0 5% 0;
+    margin: 5%;
   }
+    line-height: 32px;
 }
 
-@mixin dat_padding($top_pad:32px,$right_pad:32px,$bottom_pad:32px,$left_pad:32px){
+@mixin dat_padding($top_pad:2em,$bottom_pad:2em){
   padding-top: $top_pad;
-  padding-right: $right_pad;
+  padding-right: 2em;
   padding-bottom: $bottom_pad;
-  padding-left: $left_pad;
+  padding-left: 2em;
 }
 
 a {
@@ -35,7 +36,7 @@ a {
   &.read_more {
     display: block;
     background-color: $java_dark;
-    @include dat_padding($top_pad: 16px,$bottom_pad: 16px);
+    @include dat_padding(1em, 1em);
     text-align: center;
     vertical-align: middle;
     color: $java_light;
@@ -52,7 +53,7 @@ h1 {
   @media #{$small-only}{
     font-size: 10px;
     background-color: $java_dark;
-    @include dat_padding($top_pad: 8px, $bottom_pad: 8px);
+    @include dat_padding(0.5em, 0.5em);
   }
   @media #{$medium-up}{
     font-size: 20px;
@@ -61,22 +62,22 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2em;
 }
 
-h3{
+h3 {
   font-weight: bold;
-  padding-bottom: 32px;
+  padding-bottom: 2em;
   color: $java_dark;
 }
 
 h4 {
   @extend h3;
-  padding-bottom: 16px;
+  padding-bottom: 0;
 }
 .nav {
-  word-spacing: 32px;
-  @include dat_padding($top_pad: 16px, $bottom_pad: 16px);
+  word-spacing: 2em;
+  @include dat_padding(1em,  1em);
   border-bottom: thin solid $java_dark;
   @media #{$small-only}{
     visibility: hidden;
@@ -86,7 +87,11 @@ h4 {
     text-align: center;
   }
 }
-
+article {
+  a {
+    border-bottom: thin dashed $java_dark;
+  }
+}
 footer{
 display: block-inline;
 @extend div.row;
@@ -95,8 +100,8 @@ border-top: thin solid $java_dark;
 }
 
 .footer_links{
-  word-spacing: 32px;
-  @include dat_padding($top_pad: 16px,$bottom_pad: 16px);
+  word-spacing: 2em;
+  @include dat_padding(1em, 1em);
   @media #{$medium-down}{
     text-align: center;
   }
@@ -143,7 +148,7 @@ div {
       text-align: right;
       width: 50%;
       box-sizing: border-box;
-      @include dat_padding($top_pad: 16px,$bottom_pad: 16px);
+      @include dat_padding(1em, 1em);
       float: right;
     }
   }
@@ -160,7 +165,7 @@ aside {
   box-sizing: border-box;
   @include dat_padding();
   p {
-    padding-bottom: 16px;
+    padding-bottom: 1em;
   }
   @media #{$small-only}{
     visibility: hidden;
