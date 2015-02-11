@@ -1,5 +1,180 @@
-$dark-color : #333333;
+@import "partials/reset";
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+
+$small-only: "only screen and (max-width:640px)";
+$medium-down: "only screen and (max-width:960px)";
+$medium-only: "only screen and (min-width:641px) and (max-width:960px)";
+$medium-up: "only screen and (min-width:641px)";
+$large-up: "only screen and (min-width:961px)";
+$java_light: #57C1C7;
+$java_dark: #389FA8;
+$aqua_spring: #EFF9EC;
+$prussian_blue: #14273D;
 
 body {
-  background: $dark-color;
+  background-color: $aqua_spring;
+  font: 16px 'Droid Serif', serif;
+  color: $prussian_blue;
+  @media #{$large-up}{
+    background-color: $java_dark;
+    margin: 0 5% 0;
+  }
 }
+
+
+
+@mixin dat_padding($top_pad:32px,$right_pad:32px,$bottom_pad:32px,$left_pad:32px){
+  padding-top: $top_pad;
+  padding-right: $right_pad;
+  padding-bottom: $bottom_pad;
+  padding-left: $left_pad;
+}
+
+a {
+  text-decoration: none;
+  color: $prussian_blue;
+
+  &.read_more {
+    display: block;
+    background-color: $java_dark;
+    @include dat_padding($top_pad: 16px,$bottom_pad: 16px);
+    text-align: center;
+    vertical-align: middle;
+    color: $java_light;
+  }
+}
+
+p {
+  display: block;
+}
+
+h1 {
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border-bottom: thin solid $java_dark;
+  @include dat_padding();
+  text-align: center;
+  @media #{$small-only}{
+    font-size: 10px;
+    background-color: $java_dark;
+    @include dat_padding($top_pad: 8px, $bottom_pad: 8px);
+  }
+  @media #{$medium-up}{
+    font-size: 20px;
+  }
+  color: $java_light;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3{
+  font-weight: bold;
+  padding-bottom: 32px;
+  color: $java_dark;
+}
+
+h4 {
+  @extend h3;
+  padding-bottom: 16px;
+}
+.nav {
+  word-spacing: 32px;
+  @include dat_padding($top_pad: 16px, $bottom_pad: 16px);
+  border-bottom: thin solid $java_dark;
+  @media #{$small-only}{
+    visibility: hidden;
+    display: none;
+  }
+  @media #{$medium-up}{
+    text-align: center;
+  }
+}
+
+footer{
+display: block-inline;
+@extend div.row;
+box-sizing: border-box;
+border-top: thin solid $java_dark; 
+}
+
+.footer_links{
+  word-spacing: 32px;
+  @include dat_padding($top_pad: 16px,$bottom_pad: 16px);
+  @media #{$medium-down}{
+    text-align: center;
+  }
+}
+
+div {
+
+  ul {
+    li {
+      display: inline-block;
+  }
+}
+
+  &.row {
+    @media #{$small-only}{
+      max-width: 640px;
+    }
+    @media #{$medium-only}{
+      max-width: 960px;
+    }
+    @media #{$large-up}{
+      max-width: 900px;
+      background-color: $aqua_spring;
+    }
+  }
+
+  &.content{
+    @include dat_padding;
+    display: block-inline;
+    @media #{$large-up}{
+      border-right: thin solid $java_dark; 
+      width: 69%;
+      float: left;  
+    }
+  }
+}
+  .left{
+    @media #{$medium-down}{
+      visibility: hidden;
+      display: none;
+    }
+    @media #{$large-up}{
+      display: inline;
+      text-align: right;
+      width: 50%;
+      box-sizing: border-box;
+      @include dat_padding($top_pad: 16px,$bottom_pad: 16px);
+      float: right;
+    }
+  }
+  .right{
+    @media #{$large-up}{
+      display: inline;
+      width: 50%;
+      float: left;
+    }
+  }
+
+aside {
+  @include dat_padding();
+  p {
+    padding-bottom: 16px;
+  }
+  @media #{$small-only}{
+    visibility: hidden;
+    display: none;
+  }
+
+  @media #{$large-up}{
+    width: 30%;
+    float: right; 
+    height: 200px;
+  }
+}
+

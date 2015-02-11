@@ -1,3 +1,188 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
 body {
-  background: #333333;
-  color: #fbb; }
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+body {
+  background-color: #EFF9EC;
+  font: 16px 'Droid Serif', serif;
+  color: #14273D; }
+  @media only screen and (min-width:961px) {
+    body {
+      background-color: #389FA8;
+      margin: 0 5% 0; } }
+
+a {
+  text-decoration: none;
+  color: #14273D; }
+  a.read_more {
+    display: block;
+    background-color: #389FA8;
+    padding-top: 16px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    text-align: center;
+    vertical-align: middle;
+    color: #57C1C7; }
+
+p {
+  display: block; }
+
+h1 {
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  border-bottom: thin solid #389FA8;
+  padding-top: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  text-align: center;
+  color: #57C1C7; }
+  @media only screen and (max-width:640px) {
+    h1 {
+      font-size: 10px;
+      background-color: #389FA8;
+      padding-top: 8px;
+      padding-right: 32px;
+      padding-bottom: 8px;
+      padding-left: 32px; } }
+  @media only screen and (min-width:641px) {
+    h1 {
+      font-size: 20px; } }
+
+h2 {
+  font-size: 30px; }
+
+h3, h4 {
+  font-weight: bold;
+  padding-bottom: 32px;
+  color: #389FA8; }
+
+h4 {
+  padding-bottom: 16px; }
+
+.nav {
+  word-spacing: 32px;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  border-bottom: thin solid #389FA8; }
+  @media only screen and (max-width:640px) {
+    .nav {
+      visibility: hidden;
+      display: none; } }
+  @media only screen and (min-width:641px) {
+    .nav {
+      text-align: center; } }
+
+footer {
+  display: block-inline;
+  box-sizing: border-box;
+  border-top: thin solid #389FA8; }
+
+.footer_links {
+  word-spacing: 32px;
+  padding-top: 16px;
+  padding-right: 32px;
+  padding-bottom: 16px;
+  padding-left: 32px; }
+  @media only screen and (max-width:960px) {
+    .footer_links {
+      text-align: center; } }
+
+div ul li {
+  display: inline-block; }
+@media only screen and (max-width:640px) {
+  div.row, footer {
+    max-width: 640px; } }
+@media only screen and (min-width:641px) and (max-width:960px) {
+  div.row, footer {
+    max-width: 960px; } }
+@media only screen and (min-width:961px) {
+  div.row, footer {
+    max-width: 900px;
+    background-color: #EFF9EC; } }
+div.content {
+  padding-top: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  padding-left: 32px;
+  display: block-inline; }
+  @media only screen and (min-width:961px) {
+    div.content {
+      border-right: thin solid #389FA8;
+      width: 69%;
+      float: left; } }
+
+@media only screen and (max-width:960px) {
+  .left {
+    visibility: hidden;
+    display: none; } }
+@media only screen and (min-width:961px) {
+  .left {
+    display: inline;
+    text-align: right;
+    width: 50%;
+    box-sizing: border-box;
+    padding-top: 16px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+    padding-left: 32px;
+    float: right; } }
+
+@media only screen and (min-width:961px) {
+  .right {
+    display: inline;
+    width: 50%;
+    float: left; } }
+
+aside {
+  padding-top: 32px;
+  padding-right: 32px;
+  padding-bottom: 32px;
+  padding-left: 32px; }
+  aside p {
+    padding-bottom: 16px; }
+  @media only screen and (max-width:640px) {
+    aside {
+      visibility: hidden;
+      display: none; } }
+  @media only screen and (min-width:961px) {
+    aside {
+      width: 30%;
+      float: right;
+      height: 200px; } }
