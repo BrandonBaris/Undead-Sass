@@ -57,9 +57,6 @@ a {
     vertical-align: middle;
     color: #57C1C7; }
 
-p {
-  display: block; }
-
 h1 {
   font-weight: bold;
   letter-spacing: 3px;
@@ -137,23 +134,22 @@ div ul li {
     max-width: 900px;
     background-color: #EFF9EC; } }
 div.content {
+  box-sizing: border-box;
   padding-top: 32px;
   padding-right: 32px;
   padding-bottom: 32px;
-  padding-left: 32px;
-  display: block-inline; }
+  padding-left: 32px; }
   @media only screen and (min-width:961px) {
     div.content {
       border-right: thin solid #389FA8;
-      width: 69%;
+      width: 70%;
       float: left; } }
-
 @media only screen and (max-width:960px) {
-  .left {
+  div.left {
     visibility: hidden;
     display: none; } }
 @media only screen and (min-width:961px) {
-  .left {
+  div.left {
     display: inline;
     text-align: right;
     width: 50%;
@@ -163,14 +159,14 @@ div.content {
     padding-bottom: 16px;
     padding-left: 32px;
     float: right; } }
-
 @media only screen and (min-width:961px) {
-  .right {
+  div.right {
     display: inline;
     width: 50%;
     float: left; } }
 
 aside {
+  box-sizing: border-box;
   padding-top: 32px;
   padding-right: 32px;
   padding-bottom: 32px;
@@ -184,5 +180,4 @@ aside {
   @media only screen and (min-width:961px) {
     aside {
       width: 30%;
-      float: right;
-      height: 200px; } }
+      float: right; } }
