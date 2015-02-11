@@ -1,0 +1,22 @@
+{
+  "name": "Undead-Sass",
+  "version": "0.0.0",
+  "description": "## Sass and Gulp exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/devleague/Undead-Sass.git"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/devleague/Undead-Sass/issues"
+  },
+  "devDependencies": {
+    "gulp": "~3.8.11",
+    "gulp-sass": "~1.3.2"
+  }
+}
